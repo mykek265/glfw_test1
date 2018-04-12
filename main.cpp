@@ -8,23 +8,24 @@
 // GLFW
 #include <GLFW/glfw3.h>
 
-// Window dimensions
+
+// Размеры Window
 const GLint WIDTH = 800, HEIGHT = 600;
 
-// The MAIN function, from here we start the application and run the game loop
+// MAIN фукция, здесь находтся вход в приложение, и работает главный цикл
 int main( )
 {
     // Init GLFW
     glfwInit( );
 
-    // Set all the required options for GLFW
+    // Необходимая настройка GLFW
     glfwWindowHint( GLFW_CONTEXT_VERSION_MAJOR, 3 );
     glfwWindowHint( GLFW_CONTEXT_VERSION_MINOR, 3 );
     glfwWindowHint( GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE );
     glfwWindowHint( GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE );
     glfwWindowHint( GLFW_RESIZABLE, GL_FALSE );
 
-    // Create a GLFWwindow object that we can use for GLFW's functions
+    // Создание объекта GLFWwindow, которые мы можем исп. для GLFW-функций
     GLFWwindow *window = glfwCreateWindow( WIDTH, HEIGHT, "LearnOpenGL", NULL, NULL );
 
     int screenWidth, screenHeight;
